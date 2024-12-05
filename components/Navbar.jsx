@@ -10,7 +10,7 @@ const Navbar = () => {
 					<div className="h-[75px] justify-between md:h-[96px] px-5 md:px-0 items-center flex ">
 						<Link href={'/'}>
 							<Image
-								src={'/images/logo.png'}
+								src={'/images/img.png'}
 								alt="logo"
 								className="md:w-[172px] md:h-[68px] w-[102px] h-[40px]"
 								height={100}

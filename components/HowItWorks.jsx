@@ -65,15 +65,39 @@ const HowItWorks = () => {
 
 					{/* Right Section */}
 					<div className="flex items-center justify-center">
-						<div className="relative h-[408px] w-[238px] md:w-[305px] md:h-[625px] flex justify-center items-center">
+						<div className="relative h-[408px] w-[208px] md:w-[305px] md:h-[625px] flex justify-center items-center">
 							{/* SVG Background */}
+							<svg
+								width="374"
+								height="374"
+								viewBox="0 0 354 354"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								className="absolute hidden md:block top-[55%] left-[50%] -translate-x-1/2 -translate-y-1/2"
+							>
+								<circle
+									cx="177"
+									cy="177"
+									r="176.5"
+									stroke="#48505E"
+									stroke-dasharray="8 8"
+								/>
+								<circle
+									cx="176.5"
+									cy="176.5"
+									r="152"
+									stroke="#48505E"
+									stroke-dasharray="8 8"
+								/>
+							</svg>
+
 							<svg
 								width="274"
 								height="274"
 								viewBox="0 0 354 354"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
-								className="absolute top-[55%] left-[50%] -translate-x-1/2 -translate-y-1/2"
+								className="absolute block md:hidden top-[55%] left-[50%] -translate-x-1/2 -translate-y-1/2"
 							>
 								<circle
 									cx="177"
@@ -93,11 +117,11 @@ const HowItWorks = () => {
 
 							{/* Foreground Image */}
 							<Image
-								src="/images/phone.png"
+								src="/images/img2.png"
 								alt="Auditme"
 								width={500}
 								height={500}
-								className=" z-10 h-[160%] md:h-[140%] mt-20 md:mt-10 w-full object-cover"
+								className=" z-10 h-[100%] md:h-[100%] mt-20 md:mt-10 w-full object-center"
 							/>
 						</div>
 					</div>

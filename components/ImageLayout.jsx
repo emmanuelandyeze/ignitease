@@ -7,7 +7,7 @@ const ImageLayout = () => {
 			{/* Central Image */}
 			<div className="absolute inset-0 flex items-center justify-center">
 				<Image
-					src="/images/gas.jpeg"
+					src="/images/img3.png"
 					alt="Center"
 					width={200}
 					height={200}
