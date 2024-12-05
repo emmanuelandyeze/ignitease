@@ -12,32 +12,32 @@ const Partners = () => {
 					</div>
 					<div className="flex flex-row gap-4 md:gap-[100px] max-w-5xl mx-auto mt-5 px-5 md:mt-10 justify-between items-center">
 						<Image
-							src="/images/auditme.png"
+							src="/images/logo1.png"
 							alt="Auditme"
 							width={100}
 							height={100}
-							className="md:w-[185px] md:h-[56px] w-[88px] h-[27px]"
+							className="md:w-[185px] md:h-[66px] w-[88px] h-[57px] object-cover"
 						/>
 						<Image
-							src="/images/norman.png"
+							src="/images/logo4.png"
 							alt="norman"
-							width={100}
-							height={100}
-							className="md:w-[185px] md:h-[56px] w-[88px] h-[27px]"
+							width={80}
+							height={80}
+							className="md:w-[185px] md:h-[66px] w-[88px] h-[47px] object-cover"
 						/>
 						<Image
-							src="/images/pep.png"
+							src="/images/logo2.png"
 							alt="pep"
 							width={100}
 							height={100}
-							className="md:w-[185px] md:h-[56px] w-[88px] h-[27px]"
+							className="md:w-[185px] md:h-[56px] w-[88px] h-[47px] object-cover"
 						/>
 						<Image
-							src="/images/havilah.png"
+							src="/images/logo3.png"
 							alt="havilah"
 							width={100}
 							height={100}
-							className="md:w-[185px] md:h-[56px] w-[88px] h-[27px]"
+							className="md:w-[185px] md:h-[56px] w-[88px] h-[47px] object-cover"
 						/>
 					</div>
 				</div>

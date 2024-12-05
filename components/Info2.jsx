@@ -21,9 +21,9 @@ const Info2 = () => {
 						<p>Join our waitlist now</p>
 					</Link>
 				</div>
-				<div>
+				<div className='w-[100%] md:w-[30%]'>
 					<Image
-						src="/images/bike.png"
+						src="/images/img4.png"
 						alt="Bike"
 						width={200}
 						height={200}

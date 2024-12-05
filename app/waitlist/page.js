@@ -1,4 +1,5 @@
 'use client';
+
 import AnimatedInput from '@/components/AnimatedInput';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +10,60 @@ const page = () => {
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [email, setEmail] = useState('');
+	const [status, setStatus] = useState(null); // For showing feedback messages
+	const [isSubmitting, setIsSubmitting] = useState(false); // Disable button during submission
+
+	const handleSubmit = async () => {
+		if (!firstName || !lastName || !email) {
+			setStatus({
+				type: 'error',
+				message: 'All fields are required.',
+			});
+			return;
+		}
+
+		setIsSubmitting(true);
+		setStatus(null);
+
+		try {
+			const response = await fetch('/api/waitlist', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					firstName,
+					lastName,
+					email,
+				}),
+			});
+
+			const data = await response.json();
+
+			if (response.ok) {
+				setStatus({
+					type: 'success',
+					message: 'Successfully joined the waitlist!',
+				});
+				setFirstName('');
+				setLastName('');
+				setEmail('');
+			} else {
+				setStatus({
+					type: 'error',
+					message:
+						data.error || 'Failed to join the waitlist.',
+				});
+			}
+		} catch (error) {
+			setStatus({
+				type: 'error',
+				message: 'Something went wrong. Please try again.',
+			});
+		}
+
+		setIsSubmitting(false);
+	};
 
 	return (
 		<div className="flex flex-col md:w-[100%] md:flex-row w-full md:h-screen">
@@ -18,7 +73,7 @@ const page = () => {
 					alt="Waitlist"
 					width={200}
 					height={200}
-					className="w-full h-[239px]  md:w-[385px] md:h-screen object-cover"
+					className="w-full h-[239px] md:w-[385px] md:h-screen object-cover"
 				/>
 			</div>
 			<div className="md:w-[60%] md:pt-32">
@@ -37,7 +92,6 @@ const page = () => {
 						alt="Logo"
 						width={100}
 						height={100}
-						className=""
 					/>
 					<div className="px-5 flex flex-col gap-[12px] md:w-[80%]">
 						<h1 className="text-[#0C111D] text-[30px] md:text-[36px] font-[600]">
@@ -46,7 +100,7 @@ const page = () => {
 						<p className="text-[#48505E] text-[16px] md:text-[18px] md:leading-[28px] font-[400] leading-[24px]">
 							Be one of the first to discover how to track
 							gas levels, save money, and cook with peace of
-							mind{' '}
+							mind
 						</p>
 					</div>
 				</div>
@@ -79,14 +133,36 @@ const page = () => {
 					</div>
 				</div>
 				<div className="px-5 md:px-44 md:w-[80%]">
-					<div className="bg-[#1E5185] cursor-pointer md:mt-5 flex items-center justify-center rounded-[4px] md:py-[12px] md:px-[18px] md:text-[16px] py-[12px] px-[18px] text-[16px] text-[#fff]">
-						<p>Join our waitlist now</p>
+					<div
+						onClick={handleSubmit}
+						className={`bg-[#1E5185] cursor-pointer md:mt-5 flex items-center justify-center rounded-[4px] md:py-[12px] md:px-[18px] md:text-[16px] py-[12px] px-[18px] text-[16px] text-[#fff] ${
+							isSubmitting
+								? 'opacity-50 cursor-not-allowed'
+								: ''
+						}`}
+					>
+						<p>
+							{isSubmitting
+								? 'Submitting...'
+								: 'Join our waitlist now'}
+						</p>
 					</div>
+					{status && (
+						<p
+							className={`mt-4 text-sm ${
+								status.type === 'success'
+									? 'text-green-600'
+									: 'text-red-600'
+							}`}
+						>
+							{status.message}
+						</p>
+					)}
 				</div>
 			</div>
 			<div className="md:w-[40%]">
 				<Image
-					src="/images/waitlist.jpeg"
+					src="/images/img7.png"
 					alt="Waitlist"
 					width={200}
 					height={200}

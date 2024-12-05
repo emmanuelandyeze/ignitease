@@ -18,7 +18,7 @@ const ImageLayout = () => {
 			{/* Top Left Image */}
 			<div className="absolute top-10 left-14 md:top-0 md:left-0 transform -translate-x-8 -translate-y-8 rotate-[-20deg]">
 				<Image
-					src="/images/1.jpeg"
+					src="/images/img5.png"
 					alt="Top Left"
 					width={100}
 					height={100}
@@ -27,7 +27,7 @@ const ImageLayout = () => {
 			</div>
 
 			{/* Top Right Image */}
-			<div className="absolute top-10 right-14 md:top-0 md:right-0 transform translate-x-8 -translate-y-8 rotate-[20deg]">
+			<div className="absolute top-14 right-14 md:top-5 md:right-0 transform translate-x-8 -translate-y-8 rotate-[20deg]">
 				<Image
 					src="/images/2.png"
 					alt="Top Right"

@@ -64,7 +64,7 @@ const HowItWorks = () => {
 					</div>
 
 					{/* Right Section */}
-					<div className="flex items-center justify-center">
+					<div className="flex items-center justify-center mb-10 md:mb-0">
 						<div className="relative h-[408px] w-[208px] md:w-[305px] md:h-[625px] flex justify-center items-center">
 							{/* SVG Background */}
 							<svg
@@ -97,7 +97,7 @@ const HowItWorks = () => {
 								viewBox="0 0 354 354"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
-								className="absolute block md:hidden top-[55%] left-[50%] -translate-x-1/2 -translate-y-1/2"
+								className="absolute block md:hidden top-[59%] left-[50%] -translate-x-1/2 -translate-y-1/2"
 							>
 								<circle
 									cx="177"
@@ -121,7 +121,7 @@ const HowItWorks = () => {
 								alt="Auditme"
 								width={500}
 								height={500}
-								className=" z-10 h-[100%] md:h-[100%] mt-20 md:mt-10 w-full object-center"
+								className=" z-10 h-[110%] md:h-[100%] mt-20 md:mt-10 w-full object-center"
 							/>
 						</div>
 					</div>
