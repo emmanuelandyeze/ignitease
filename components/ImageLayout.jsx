@@ -54,7 +54,7 @@ const ImageLayout = () => {
 					src="/images/4.jpeg"
 					alt="Bottom Right"
 					width={100}
-					height={100}
+					height={150}
 					className="rounded-lg border-2 border-[#1A6617] shadow-md"
 				/>
 			</div>
