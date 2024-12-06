@@ -23,7 +23,7 @@ const Info2 = () => {
 				</div>
 				<div className='w-[100%] md:w-[30%]'>
 					<Image
-						src="/images/img4.png"
+						src="/images/bike.png"
 						alt="Bike"
 						width={200}
 						height={200}

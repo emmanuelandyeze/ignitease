@@ -16,7 +16,7 @@ const Info = () => {
 				</div>
 				<div>
 					<Image
-						src="/images/about.jpeg"
+						src="/images/detect.png"
 						alt="About"
 						width={200}
 						height={200}
