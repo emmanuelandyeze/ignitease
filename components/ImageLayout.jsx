@@ -3,22 +3,22 @@ import Image from 'next/image';
 
 const ImageLayout = () => {
 	return (
-		<div className="relative w-96 mt-10 md:mt-0 flex items-center h-96 md:h-[454.22px] mx-auto">
+		<div className="relative w-96 mt-20 md:mt-0 flex items-center h-96 md:h-[454.22px] mx-auto">
 			{/* Central Image */}
 			<div className="absolute inset-0 flex items-center justify-center">
 				<Image
-					src="/images/img3.png"
+					src="/images/landing-main.png"
 					alt="Center"
-					width={200}
-					height={200}
-					className="shadow-lg md:h-[288px] md:w-[288px]"
+					width={500}
+					height={500}
+					className="shadow-lg h-[180px] w-[188px] md:h-[288px] md:w-[288px]"
 				/>
 			</div>
 
 			{/* Top Left Image */}
 			<div className="absolute top-5 left-14 md:top-0 md:left-0 transform -translate-x-8 -translate-y-8 rotate-[-20deg]">
 				<Image
-					src="/images/topleft.png"
+					src="/images/left-top.png"
 					alt="Top Left"
 					width={100}
 					height={100}
@@ -27,11 +27,11 @@ const ImageLayout = () => {
 			</div>
 
 			{/* Top Right Image */}
-			<div className="absolute top-10 right-14 md:top-5 md:right-0 transform translate-x-8 -translate-y-8 rotate-[20deg]">
+			<div className="absolute top-5 right-14 md:top-[0.1rem] md:right-0 transform translate-x-8 -translate-y-8 rotate-[20deg]">
 				<Image
-					src="/images/topright.png"
+					src="/images/right-top.png"
 					alt="Top Right"
-					width={80}
+					width={100}
 					height={50}
 					className="rounded-lg border-2 border-[#B56300] shadow-md"
 				/>
@@ -40,7 +40,7 @@ const ImageLayout = () => {
 			{/* Bottom Left Image */}
 			<div className="absolute bottom-5 left-14 md:bottom-0 md:left-0 transform -translate-x-8 translate-y-8 rotate-[15deg]">
 				<Image
-					src="/images/bottomleft.png"
+					src="/images/left-bottom.png"
 					alt="Bottom Left"
 					width={100}
 					height={100}
@@ -49,9 +49,9 @@ const ImageLayout = () => {
 			</div>
 
 			{/* Bottom Right Image */}
-			<div className="absolute bottom-12 right-14 md:bottom-5 md:right-0 transform translate-x-8 translate-y-8 rotate-[-15deg]">
+			<div className="absolute bottom-5 right-14 md:bottom-[0.01rem] md:right-0 transform translate-x-8 translate-y-8 rotate-[-15deg]">
 				<Image
-					src="/images/4.jpeg"
+					src="/images/right-bottom.png"
 					alt="Bottom Right"
 					width={100}
 					height={150}

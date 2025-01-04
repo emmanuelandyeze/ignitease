@@ -11,7 +11,7 @@ const HowItWorks = () => {
 	];
 
 	return (
-		<div className="bg-[#FFFF] mt-1 md:mt-20 max-w-5xl mx-auto  py-1 md:py-5">
+		<div className="bg-[#FFFF] mt-1 md:mt-10 max-w-5xl mx-auto  py-1 md:py-5">
 			<div>
 				<div className="flex justify-center items-center mb-0 md:mb-3">
 					<p className="border-2 border-[#48505E] bg-[#EDEEEF] text-[#000] px-[24px] py-[4px] rounded-full">
@@ -121,7 +121,7 @@ const HowItWorks = () => {
 								alt="Auditme"
 								width={500}
 								height={500}
-								className=" z-10 h-[110%] md:h-[100%] mt-20 md:mt-10 w-full object-center"
+								className=" z-10 h-[110%] md:h-[100%] mt-28 md:mt-10 w-full object-center"
 							/>
 						</div>
 					</div>

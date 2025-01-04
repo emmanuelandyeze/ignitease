@@ -77,7 +77,7 @@ const page = () => {
 				/>
 			</div>
 			<div className="md:w-[60%] md:pt-32">
-				<div className="flex flex-col md:px-40">
+				<div className="flex flex-col px-4 mt-8 md:px-40">
 					<Link
 						href={'/'}
 						className="flex flex-row gap-1 items-center absolute top-5 left-5 md:top-10 md:left-40 bg-[#fff] py-[4px] px-[6px] rounded-[8px]"
@@ -88,12 +88,12 @@ const page = () => {
 						</p>
 					</Link>
 					<Image
-						src="/images/icon2.png"
+						src="/images/waitlist-logo.png"
 						alt="Logo"
-						width={100}
-						height={100}
+						width={80}
+						height={80}
 					/>
-					<div className="px-5 flex flex-col gap-[12px] md:w-[80%]">
+					<div className="px-2 flex flex-col gap-[12px] md:w-[80%]">
 						<h1 className="text-[#0C111D] text-[30px] md:text-[36px] font-[600]">
 							Get early access
 						</h1>
@@ -104,7 +104,7 @@ const page = () => {
 						</p>
 					</div>
 				</div>
-				<div className="space-y-6 px-5 py-10 md:px-44 md:w-[80%]">
+				<div className="space-y-6 px-5 py-10 md:px-[10.5rem] md:w-[80%]">
 					<div className="flex flex-row items-center gap-5">
 						<AnimatedInput
 							label="First Name"
@@ -132,7 +132,7 @@ const page = () => {
 						/>
 					</div>
 				</div>
-				<div className="px-5 md:px-44 md:w-[80%]">
+				<div className="px-5 md:px-[10.5rem] md:w-[80%]">
 					<div
 						onClick={handleSubmit}
 						className={`bg-[#1E5185] cursor-pointer md:mt-5 flex items-center justify-center rounded-[4px] md:py-[12px] md:px-[18px] md:text-[16px] py-[12px] px-[18px] text-[16px] text-[#fff] ${
@@ -162,10 +162,10 @@ const page = () => {
 			</div>
 			<div className="md:w-[40%]">
 				<Image
-					src="/images/img7.png"
+					src="/images/waitlist.png"
 					alt="Waitlist"
-					width={200}
-					height={200}
+					width={500}
+					height={500}
 					className="w-full h-[239px] hidden md:flex md:w-full md:h-screen object-cover"
 				/>
 			</div>

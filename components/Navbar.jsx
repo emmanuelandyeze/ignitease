@@ -10,11 +10,11 @@ const Navbar = () => {
 					<div className="h-[75px] justify-between md:h-[96px] px-5 md:px-0 items-center flex ">
 						<Link href={'/'}>
 							<Image
-								src={'/images/img.png'}
+								src={'/images/main-logo.png'}
 								alt="logo"
 								className="md:w-[172px] md:h-[68px] w-[102px] h-[40px]"
-								height={100}
-								width={100}
+								height={500}
+								width={500}
 							/>
 						</Link>
 						<div className="flex flex-row items-center gap-[16px] md:gap-[36px]">

@@ -5,7 +5,7 @@ import ImageLayout from './ImageLayout';
 
 const Landing = () => {
 	return (
-		<div className="pt-[20px] md:pt-[80px] max-w-5xl mx-auto md:gap-28 flex flex-col md:flex-row items-start md:items-center ">
+		<div className="pt-[20px] md:pt-[40px] md:pb-10 max-w-5xl mx-auto md:gap-28 flex flex-col md:flex-row items-start md:items-center ">
 			<div className="flex flex-col px-[20px] gap-[16px]">
 				<h1 className="text-[#0C111D] text-[36px] md:text-[60px] md:w-[483px] font-[600] leading-[44px] md:leading-[72px]">
 					Never run out of cooking gas again

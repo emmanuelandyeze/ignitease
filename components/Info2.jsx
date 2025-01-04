@@ -5,7 +5,7 @@ import React from 'react';
 const Info2 = () => {
 	return (
 		<div>
-			<div className="bg-[#FFF4E6] flex flex-col max-w-[85rem] md:mx-auto md:flex-row-reverse justify-center items-start md:items-center gap-[32px] rounded-[40px] py-10 md:py-20 px-5 md:px-20 mx-5 my-10">
+			<div className="bg-[#FFF4E6] flex flex-col max-w-[85rem] md:mx-auto md:flex-row-reverse justify-center items-start md:items-center gap-[32px] rounded-[40px] md:pb-10 py-10 md:py-20 px-5 md:px-20 mx-5 mt-20 mb-20">
 				<div className="flex flex-col w-full md:w-[525px] items-start gap-[16px]">
 					<h1 className="text-[#0C111D] leading-[44px] text-[36px] md:text-[50px] md:leading-[62px] font-[600]">
 						Order cooking gas anytime, anywhere
@@ -23,11 +23,11 @@ const Info2 = () => {
 				</div>
 				<div className='w-[100%] md:w-[30%]'>
 					<Image
-						src="/images/bike.png"
-						alt="Bike"
-						width={200}
-						height={200}
-						className="w-full h-[239px] md:w-[385px] md:h-[475px] object-cover"
+						src="/images/order.png"
+						alt="Order"
+						width={500}
+						height={500}
+						className="w-full h-[239px] md:w-[470px] md:h-[475px] object-cover"
 					/>
 				</div>
 			</div>
