@@ -20,7 +20,7 @@ const Info = () => {
 						alt="About"
 						width={500}
 						height={500}
-						className="w-[310px] h-[239px] md:w-[470px] md:h-[475px] object-cover"
+						className="w-[310px] h-[239px] md:w-[370px] md:h-[475px] object-cover"
 					/>
 				</div>
 			</div>
